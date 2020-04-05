@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "safezone-af096",
+  "private_key_id": "0f3837f8cfb1e0a7eacdc415152a52a72af3ce20",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDpbDyLTUycIzL3\nv/w99Oy5KKXCJ2tvaugfq3id2e1eN0pFLivNhFqOY2W1KI5F9aSBcSCoxCxt7aFm\nj4m0PTRHPzIVR87Ja9ERpXyrDmj5i9O8BuHE+EG6Qp9iTpP1k4T0nHt4iDZ19tBb\nrOW48GM6aqmqrb20BHulr55TA+i3HjHU6yy5eyr2dJQb2wNdkB49tIUg3KWbkfjw\nW4rSJLbEIRx1QvCci+l6myDdKwdQQ3J1GkDAR94TV6UxPyZSNJXlhDKa6NDW2TmT\nRZZBy77IIgW/kilZj6Xea84oCDIeby2OYY6xRmtAC4wP2EIW5N4vgrxIrKK5mYOl\n2+pTNaMZAgMBAAECggEADXwNO1bp2BNIfHuAzOt7SW8JtF+mmzcn1byIKUZPqiOz\njK+QJD1DJfqkA4UmQvBf4oJwio9aqbcSneQo5lqqzHrgH86YKZaq60QOIauhcNkd\nED2tiT12PpZessUrUwKEqcTodRwZWVM60jD4zGhGszc6Ofvze5TOt9GfadhN91YQ\n8zxyFqEZEiQ/Lq0WU9rlYE/v8vOg6S+Regc1sksXz4aXb033zoz6zsssZSyr86XP\nSnNb1GivrcvHq/Wnfm68FdH3aPzRWeqT2XNZehVppPfSODyr3Dl3e37FOCeE1tjc\nxUetQ9Ssqcf5TxQddGDdju3t0grPoeC/tJPw+fEbCQKBgQD99SVzMnly8zNvvJNv\nxiPq6Kcx59w5WVrtdnn8by9JlEcodp2hH5wMcTWV3FboEGMnT4/2n/wnMqlXMTp/\naaesDWuUv7tCFgylrmeoRhBAnObF3tVY0YlXGoJVaUCAIOZAKRXzveFUuGhdEu/B\n7fMl/dBDxEgKiijro+UxsWuWnwKBgQDrTNAMWpHDscD8JRw7wp16Yln8V3VGeRaL\nKlECLm8hjHXQb1ZCEI979AfhQnsPrQboRa6mGgpBMMbRd1dRTHlE9H31scfWg2g/\nxqDgOkk80xgksRMWhcVqJyhOwoRH8PpqV+B2VdmgkvRAOhLLC/t18Vwj3KijxNlL\nPVsYhYUDRwKBgG95DuI88qBpbleKn/D9OUDgtJssWjd2KHp5edw7dbdHdeCmCFT0\nSgwQGWRZnnAo2U0lGF06JnWSQFC8lB/fYbEdBu75JhpBEXYcUvXDI1kpRgbu5Bkj\niLSKN1GEbMKRLmBVaIRgAautcmoAaOtoJkWz3poQa0rtED825uDkLwSjAoGAKTlp\n8eAkTZ7k6sgtrCKqqHh2v4krGM+6LWOakcFE4yHSulPnTufL27Gjd8nH+bUc0rDy\nqlNBnK5JBwXbnHjDfls/fj5JfsHDD/li0iYkEq4BOtxzNaz2K2T04OefeWM03FDN\nGK5t1H4qoN4L0NsmkUFaHUZZnWetkksLnL430Z0CgYAm9Vf6MD2K9texFIZ4PbEt\nItQB0r7f1QeMDj2heXmXmBW3gT1jP81RJ7C7PweYN9PbaNERWW2ABd+IQ0RlJAG/\nZkALojBpVkT9fzptiyQfIwYZorPA2YIWttziA31uFfOyBwWIhPUbgzfCPUUFH625\n/k/wRMwEVYPqpREgV4972A==\n-----END PRIVATE KEY-----\n",
+  "client_email": "safezone-serviceaccount@safezone-af096.iam.gserviceaccount.com",
+  "client_id": "101496118512826168766",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/safezone-serviceaccount%40safezone-af096.iam.gserviceaccount.com"
+}
