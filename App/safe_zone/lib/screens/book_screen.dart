@@ -1,8 +1,9 @@
+import 'package:autocomplete_textfield/autocomplete_textfield.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 
-import 'buttons.dart';
+import '../custom/buttons.dart';
 
 class BookScreen extends StatefulWidget {
   @override
@@ -11,13 +12,25 @@ class BookScreen extends StatefulWidget {
 
 class BookScreenState extends State<BookScreen> {
   String _time = "Not set";
+  var items = [
+    "Coop Vasalund",
+    "ICA Kvantum",
+    "Coop Råsundavägen",
+    "Coop Bergshamra",
+    "ICA Nära Furuviks",
+    "Scania tekniskt centrum",
+    "Coop älvsjö"
+  ];
+  TextEditingController controller = new TextEditingController();
+  GlobalKey<AutoCompleteTextFieldState<String>> key = new GlobalKey();
+  AutoCompleteTextField searchTextField;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white, // status bar color
-        brightness: Brightness.light, //
+        backgroundColor: Colors.white,
+        brightness: Brightness.light,
         title: Center(
           child: Text(
             'My Trip',
@@ -40,10 +53,35 @@ class BookScreenState extends State<BookScreen> {
                   width: 15.0,
                 ),
                 Flexible(
-                  child: TextField(
+                  child: searchTextField = AutoCompleteTextField<String>(
+                    itemBuilder: (context, item) {
+                      return Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: <Widget>[
+                          Container(
+                            margin: EdgeInsets.all(10.0),
+                            child: Text(
+                              item,
+                              style: TextStyle(fontSize: 16.0),
+                            ),
+                          ),
+                        ],
+                      );
+                    },
+                    itemFilter: (item, query) {
+                      return item.toLowerCase().startsWith(query.toLowerCase());
+                    },
+                    itemSorter: (a, b) {
+                      return a.compareTo(b);
+                    },
+                    itemSubmitted: (item) {
+                      setState(() =>
+                          searchTextField.textField.controller.text = item);
+                    },
+                    clearOnSubmit: false,
+                    key: key,
+                    suggestions: items,
                     style: TextStyle(color: Colors.pinkAccent),
-                    cursorColor: Colors.green,
-                    obscureText: false,
                     decoration: InputDecoration(
                       hintText: "Search Place ...",
                       contentPadding: EdgeInsets.only(bottom: -2.0),
