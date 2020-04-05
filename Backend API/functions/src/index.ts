@@ -30,3 +30,20 @@ export const getData = functions.https.onRequest(
         });
         res.status(200).send(result);
     });
+
+export const getCount = functions.https.onRequest(
+    async (req, res) => {
+        const input = req.body;
+        const From = new Date(input.From).getTime();
+        const To = new Date(input.To).getTime();
+        const query = await db.collection("data")
+            .where("PlaceId", "==", input.PlaceId)
+            .where("From", ">=", From)
+            .get();
+        let count = 0;
+        query.docs.map(doc => {
+            if (doc.data().To <= To)
+                count++;
+        });
+        res.status(200).send(count.toString());
+    });

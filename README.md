@@ -12,6 +12,7 @@ Or you can get the code on local and use the function emulator.
 None.
 ## Built With
 
-* [Firebase Functions](hhttps://firebase.google.com/) - The serverless functions 
+* [Firebase Functions](https://firebase.google.com/) - The serverless functions 
 * [Fireabse Firestore](https://firebase.google.com/docs/firestore) - storage
 * [Flutter](https://flutter.dev/) - Used to build the mobile app to work on android and IOS
+* [Google Places API](https://cloud.google.com/maps-platform/places) - To retrieve location information  
